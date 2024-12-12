@@ -9,7 +9,7 @@ const GiftModal = ({ isOpen, onClose, gift }) => {
       <h2>{gift.name}</h2>
       <img src={gift.image} alt={gift.name} />
       <p>Цена: {gift.price} ₽</p>
-      <a href={gift.link} target="_blank" rel="noopener noreferrer">
+      <a class='form button' href={gift.link} target="_blank" rel="noopener noreferrer">
         Перейти к товару
       </a>
       <button onClick={onClose}>Закрыть</button>
